@@ -1,0 +1,71 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="540" d:DesignHeight="960" 
+        MaxWidth="319" MaxHeight="385"
+        x:Class="RegistrationWindow.MainWindow"
+        Title="RegistrationWindow" 
+        FontFamily="Circe">
+    
+        
+   
+    <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center" >
+        <TextBlock Text="АВТОРИЗАЦИЯ"
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold"
+                   FontSize="20"
+                   Margin="0 10 0 30"/>
+        <TextBox Watermark="E-MAIL"
+                 Background="#eaeaea"
+                 BorderBrush="White"
+                 Margin=" 10"
+                 HorizontalContentAlignment="Center"/>
+        <TextBox Watermark="ПАРОЛЬ"
+                 HorizontalContentAlignment="Center"
+                 Background="#eaeaea"
+                 BorderBrush="White"
+                 PasswordChar="*" 
+                 Margin=" 10" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <CheckBox HorizontalAlignment="Center"></CheckBox>
+            <TextBlock Text="Запомнить меня"
+                       VerticalAlignment="Center"></TextBlock>
+        </StackPanel>
+       
+        <Button Content="ВОЙТИ" Background="White" BorderBrush="Black"
+                CornerRadius="0"
+                Height="50"
+                Width="150"
+                Margin="0 15 0 0"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                
+                HorizontalAlignment="Center"/>
+        <Button HorizontalAlignment="Center"
+                Background="White"
+                Content="Вспомнить пароль"
+                Margin="0 10  0 0">
+            <Button.Styles>
+                <Style Selector="AccessText">
+                    <Setter Property="TextDecorations" Value="Underline"></Setter>
+                </Style>
+            </Button.Styles>
+        </Button>
+        <Button Content="РЕГИСТРАЦИЯ"
+                Background="#a57fb2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom"
+                Width="400"
+                Height="60"
+                Margin="0 15 0 0"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Foreground="White"
+                FontWeight="Bold"
+                FontSize="18"
+                CornerRadius="0"></Button>
+    </StackPanel>
+</Window>
+
